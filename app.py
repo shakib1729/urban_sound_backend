@@ -14,8 +14,6 @@ CORS(app)
 MODEL_PATH = 'models/UrbanSoundNNComplete.h5'
 model = load_model(MODEL_PATH)
 
-# The path where to store the uploaded file
-app.config["UPLOADS_PATH"] = './uploads'
 
 def extract_mfcc(y, sr):
     mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=40)
@@ -48,7 +46,7 @@ def predict():
 		print (request)
 		# Save the file to the specified path
 		file_name = secure_filename(currFile.filename)
-		file_path = os.path.join(app.config["UPLOADS_PATH"], file_name)
+		file_path = os.path.join('./uploads', file_name)
 		currFile.save(file_path)	
 
 		# Make prediction

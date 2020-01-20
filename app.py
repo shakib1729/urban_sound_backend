@@ -2,7 +2,6 @@ from flask import Flask, jsonify, request
 import os
 import numpy as np
 import librosa
-import matplotlib.pyplot as plt
 
 from keras.models import load_model
 from werkzeug.utils import secure_filename
@@ -17,7 +16,7 @@ model = load_model(MODEL_PATH)
 # model._make_predict_function()
 
 # The path where to store the uploaded file and save the spectrogram
-app.config["UPLOADS_PATH"] = 'C:/Users/AS/Documents/Urban Sound Classification/urban sound backend/uploads'
+app.config["UPLOADS_PATH"] = './uploads'
 
 def extract_mfcc(y, sr):
     mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=40)

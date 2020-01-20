@@ -13,9 +13,8 @@ CORS(app)
 
 MODEL_PATH = 'models/UrbanSoundNNComplete.h5'
 model = load_model(MODEL_PATH)
-# model._make_predict_function()
 
-# The path where to store the uploaded file and save the spectrogram
+# The path where to store the uploaded file
 app.config["UPLOADS_PATH"] = './uploads'
 
 def extract_mfcc(y, sr):

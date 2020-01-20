@@ -38,7 +38,7 @@ def model_predict(wav_path):
 @app.route('/')
 def index():
     # Main page, nothing to render here
-    return None
+    return "Hello From Server"
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():

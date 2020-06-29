@@ -11,7 +11,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-MODEL_PATH = 'models/UrbanSoundNNComplete.h5'
+MODEL_PATH = 'models/UrbanSoundComplete1.h5'
 model = load_model(MODEL_PATH)
 
 

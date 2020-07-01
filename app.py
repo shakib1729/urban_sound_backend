@@ -13,7 +13,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-MODEL_PATH = 'models/UrbanSoundCompleteCNNAdam.h5'
+MODEL_PATH = 'models/UrbanSoundCNN4.h5'
 model = load_model(MODEL_PATH)
 
 def save_spectrogram(curr_audio_path, curr_audio_name):

@@ -7,7 +7,7 @@
 <img src="https://user-images.githubusercontent.com/39847281/78693594-1879cc00-7919-11ea-81bc-0ce58aae8b19.JPG"></p>
 
 ## 
-This repository contains the Jupyter Notebooks of the project<br/>
+This repository contains the backend part of the web application implemented using Flask<br/>
 Frontend using ReactJS: https://github.com/shakib1729/urban_sound_frontend<br/>
 Jupyter Notebooks: https://github.com/shakib1729/urban-sound-cnn-jupyter<br/>
 ## About the project.
